@@ -1,12 +1,10 @@
 import { Hono } from 'hono'
+import { setHandlers } from './handlers'
+import { setMiddlewares } from './middlewares'
 
 const app = new Hono<HonoENV>()
 
-app.use(async (c, next) => {
-  const start = Date.now()
-  await next()
-  const end = Date.now()
-  c.res.headers.set('X-Response-Time', `${end - start}`)
-})
+setMiddlewares(app)
+setHandlers(app)
 
 export default app

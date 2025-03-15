@@ -8,6 +8,7 @@
     "load-context.ts",
     "worker-configuration.d.ts",
     "vite.config.ts",
+    "server/**/*",
     "types/**/*"
   ],
   "compilerOptions": {
@@ -22,7 +23,7 @@
     "baseUrl": ".",
     "rootDirs": [".", "./.react-router/types"],
     "paths": {
-      "@/*": ["./app/*"],
+      "@app/*": ["./app/*"],
       "~/*": ["./*"]
     },
     "outDir": "./.dist",

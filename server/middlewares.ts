@@ -45,13 +45,13 @@ const setAuthForDashboard = F.createMiddleware(async (c, next) => {
   return next()
 })
 
-const setAuthForAPI = F.createMiddleware(async (c, next) => {
-  const auth = getAuth(c)
+const setAuthForAPI = F.createMiddleware(async (_, next) => {
+  // const auth = getAuth(c)
 
-  if (auth && auth.userId) {
-    c.set('userId', auth.userId)
-    return next()
-  }
+  // if (auth && auth.userId) {
+  //   c.set('userId', auth.userId)
+  //   return next()
+  // }
 
   // do some other auth logic for API
   return next()

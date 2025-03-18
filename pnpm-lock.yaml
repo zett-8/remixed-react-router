@@ -34,7 +34,7 @@ importers:
         version: 4.7.4
       hono-react-router-adapter:
         specifier: ^0.6.2
-        version: 0.6.2(hono@4.7.4)(miniflare@4.20250317.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(wrangler@4.0.0(@cloudflare/workers-types@4.20250313.0))
+        version: 0.6.3(hono@4.7.4)(miniflare@4.20250317.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(wrangler@4.0.0(@cloudflare/workers-types@4.20250313.0))
       isbot:
         specifier: ^5.1.17
         version: 5.1.23
@@ -2591,8 +2591,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono-react-router-adapter@0.6.2:
-    resolution: {integrity: sha512-DBmLpwLOS2GI9sS8Na1/xjpVknp/Pqu/pcN4nlVt9/LL6hH0awcaY88FjSB8su31u0EU2M7CZbAAYBrXBZwEHg==}
+  hono-react-router-adapter@0.6.3:
+    resolution: {integrity: sha512-ZZ2lqVkryxXNfROEl+ihs1y97AhCJr6Vuev6CJIx6n+LLnhoTSYMDubmVfJUJ2XtCL4NnX30yzpyYfawv0+OOw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       hono: '*'
@@ -6355,7 +6355,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono-react-router-adapter@0.6.2(hono@4.7.4)(miniflare@4.20250317.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(wrangler@4.0.0(@cloudflare/workers-types@4.20250313.0)):
+  hono-react-router-adapter@0.6.3(hono@4.7.4)(miniflare@4.20250317.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(wrangler@4.0.0(@cloudflare/workers-types@4.20250313.0)):
     dependencies:
       '@hono/vite-dev-server': 0.18.3(hono@4.7.4)(miniflare@4.20250317.0)(wrangler@4.0.0(@cloudflare/workers-types@4.20250313.0))
       hono: 4.7.4

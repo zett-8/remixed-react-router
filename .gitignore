@@ -17,3 +17,4 @@
 .dev.vars
 .env
 .vscode
+.tool-versions

@@ -6,6 +6,7 @@ declare global {
   type HonoENV = {
     Bindings: {
       DB: D1Database
+      TEST: boolean
     }
     Variables: {
       db: DrizzleD1Database<typeof schema>

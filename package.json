@@ -52,7 +52,7 @@
     "dotenv-cli": "^8.0.0",
     "drizzle-kit": "~0.30.0",
     "eslint": "^9.18.0",
-    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-import-resolver-typescript": "^4.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",

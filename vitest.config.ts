@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { defineWorkersProject } from '@cloudflare/vitest-pool-workers/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
 

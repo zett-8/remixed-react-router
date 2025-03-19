@@ -19,7 +19,7 @@ export const setMiddlewares = (app: Hono<HonoENV>): Hono<HonoENV> => {
     c.res.headers.set('X-Response-Time', `${end - start}`)
   })
 
-  app.use(setD1)
+  app.use(setInfrastructure)
   app.use('*', clerkMiddleware())
   app.use('/dashboard/*', setAuthForDashboard)
   app.use('/api/*', setAuthForAPI)
@@ -29,7 +29,7 @@ export const setMiddlewares = (app: Hono<HonoENV>): Hono<HonoENV> => {
 
 const F = createFactory<HonoENV>()
 
-const setD1 = F.createMiddleware(async (c, next) => {
+const setInfrastructure = F.createMiddleware(async (c, next) => {
   c.set('db', drizzle(c.env.DB, { schema }))
   return next()
 })
@@ -45,13 +45,13 @@ const setAuthForDashboard = F.createMiddleware(async (c, next) => {
   return next()
 })
 
-const setAuthForAPI = F.createMiddleware(async (_, next) => {
-  // const auth = getAuth(c)
+const setAuthForAPI = F.createMiddleware(async (c, next) => {
+  const auth = getAuth(c)
 
-  // if (auth && auth.userId) {
-  //   c.set('userId', auth.userId)
-  //   return next()
-  // }
+  if (auth && auth.userId) {
+    c.set('userId', auth.userId)
+    return next()
+  }
 
   // do some other auth logic for API
   return next()

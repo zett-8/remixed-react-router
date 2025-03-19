@@ -12,12 +12,7 @@ describe('GET /api/check', () => {
     testEnv = setTestEnv(env)
 
     vi.mock('@hono/clerk-auth', () => ({
-      clerkMiddleware: vi.fn().mockImplementation(
-        () =>
-          function (c, next) {
-            return next()
-          }
-      ),
+      clerkMiddleware: vi.fn().mockImplementation(() => (_, next) => next()),
       getAuth: vi.fn().mockImplementation(() => ({})),
     }))
   })

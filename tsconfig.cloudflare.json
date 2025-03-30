@@ -23,8 +23,7 @@
     "baseUrl": ".",
     "rootDirs": [".", "./.react-router/types"],
     "paths": {
-      "@app/*": ["./app/*"],
-      "~/*": ["./*"]
+      "@app/*": ["./app/*"]
     },
     "outDir": "./.dist",
     "esModuleInterop": true,

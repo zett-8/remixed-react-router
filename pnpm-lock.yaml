@@ -120,9 +120,6 @@ importers:
       vite-tsconfig-paths:
         specifier: ^5.1.4
         version: 5.1.4(typescript@5.8.2)(vite@6.2.3(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2))
-      vitest:
-        specifier: ^3.0.9
-        version: 3.0.9(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)
       wrangler:
         specifier: ^4.0.0
         version: 4.4.0(@cloudflare/workers-types@4.20250321.0)

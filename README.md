@@ -2,108 +2,110 @@
 
 # 🔥 Hono React Router
 
-Hono React Router is your web app's stellar launchpad improved from the original React Router [template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1).  
-A production-ready template designed for seamless deployment on Cloudflare Workers.  
-📖 See the [Hono](https://hono.dev/) and the [React Router docs](https://reactrouter.com/) for details on supported features.
+**Hono React Router** is a production-ready template designed to launch your web app seamlessly on **Cloudflare Workers**.  
+It builds upon the official [React Router Cloudflare D1 template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1), offering a more powerful and flexible foundation.  
 
-Demo: [https://hono-react-router.zett.workers.dev](https://hono-react-router.zett.workers.dev)
+📖 Explore the [Hono](https://hono.dev/) and [React Router](https://reactrouter.com/) documentation for full feature references.
 
-## Features
+---
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+**Demo:** [https://hono-react-router.zett.workers.dev](https://hono-react-router.zett.workers.dev)
 
-## Setups
+<br />
 
-- Hono
-- React Router
-- Cloudflare Workers with D1
-- User Authentication with Clerk
-- Tailwind
-- Drizzle
-- Zod
-- ESLint with flat config
-- Vite
-- Typescript
+## 🚀 Available Setups
 
-## Getting Started
+This repository also includes a lighter version under the [`mini`](https://github.com/zett-8/hono-react-router/tree/mini) branch — choose the version that best fits your needs.
 
-### Installation
+| Feature / Branch               | `main` | `mini` |
+|-------------------------------|--------|--------|
+| Hono Server                   | ✅     | ✅     |
+| React Router (Framework mode) | ✅     | ✅     |
+| D1 Database                   | ✅     |        |
+| Authentication ([Clerk](https://clerk.com/)) | ✅ |        |
+| Drizzle ORM                   | ✅     |        |
+| Testing (Vitest)              | ✅     |        |
+| Zod Validation                | ✅     |        |
+| Tailwind CSS                  | ✅     | ✅     |
+| Prettier                      | ✅     | ✅     |
+| ESLint (Flat Config)          | ✅     | ✅     |
+| Vite                          | ✅     | ✅     |
+| TypeScript                    | ✅     | ✅     |
 
-Install the dependencies:
+<br />
+
+## 🛠️ Getting Started
+
+### 1. Install dependencies
 
 ```bash
 pnpm install
 ```
 
-### Development
-
-Generate types:
+### 2. Generate types
 
 ```bash
-pnpm run typegen
+pnpm typegen
 ```
 
-Run an initial database migration:
+### 3. Run initial database migration
 
 ```bash
-pnpm run db:migrate
+pnpm db:generate
+pnpm db:migrate
 ```
 
-Start the development server with HMR:
+### 4. Start the development server (with HMR)
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
+Your app will be available at: http://localhost:5173
 
-To run Wrangler:
+### Optional: Run with Wrangler
 
 ```sh
-npm run build
-npm run start
+pnpm build
+pnpm start
 ```
 
-Your application will be available at `http://localhost:5173`.
+<br />
 
-## Building for Production
+## 🏗 Building for Production
 
-Create a production build:
+To create a production-ready build:
 
 ```bash
 pnpm run build
 ```
 
-## Deployment
+<br />
 
-Deployment is done using the Wrangler CLI.
+## 🚢 Deployment
 
-To deploy directly to production:
+Deployment is handled via [Wrangler](https://developers.cloudflare.com/workers/wrangler/).
+
+### Deploy to production:
 
 ```sh
 npx wrangler deploy
 ```
 
-To deploy a preview URL:
+### Deploy a preview version:
 
 ```sh
 npx wrangler versions upload
 ```
 
-You can then promote a version to production after verification or roll it out progressively.
-
+Once validated, you can promote a version to production:
 ```sh
 npx wrangler versions deploy
 ```
 
-## Styling
+<br />
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+## 🎨 Styling
 
----
+This template comes pre-configured with [Tailwind CSS](https://tailwindcss.com/) for rapid styling.
+Feel free to replace or extend it with your preferred CSS framework or methodology.
 
-Built with ❤️ using React Router.

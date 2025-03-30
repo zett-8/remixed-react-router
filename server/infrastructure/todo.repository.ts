@@ -1,6 +1,6 @@
 import { eq } from 'drizzle-orm'
 import type { DrizzleD1Database } from 'drizzle-orm/d1'
-import * as schema from '~/database/schema'
+import * as schema from '../../database/schema'
 import type { TodoDomain } from '../domains/todo.domain'
 
 const todos = schema.todos

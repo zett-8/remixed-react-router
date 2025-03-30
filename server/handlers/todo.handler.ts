@@ -1,5 +1,5 @@
 import { createFactory } from 'hono/factory'
-import { todoInsertSchema } from '~/database/schema/todo'
+import { todoInsertSchema } from '../../database/schema/todo'
 
 const F = createFactory<HonoENV>()
 

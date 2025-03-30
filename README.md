@@ -1,10 +1,12 @@
 ![Convertio Image](https://raw.githubusercontent.com/zett-8/images/refs/heads/master/hrr.png)
 
-# 💿 Hono React Router
+# 🔥 Hono React Router
 
 Hono React Router is your web app's stellar launchpad improved from the original React Router [template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1).  
 A production-ready template designed for seamless deployment on Cloudflare Workers.  
 📖 See the [Hono](https://hono.dev/) and the [React Router docs](https://reactrouter.com/) for details on supported features.
+
+Demo: [https://hono-react-router.zett.workers.dev](https://hono-react-router.zett.workers.dev)
 
 ## Features
 
@@ -18,7 +20,7 @@ A production-ready template designed for seamless deployment on Cloudflare Worke
 
 ## Setups
 
-- Hono🔥
+- Hono
 - React Router
 - Cloudflare Workers with D1
 - User Authentication with Clerk

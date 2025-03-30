@@ -20,7 +20,7 @@ This repository also includes a lighter version under the [`mini`](https://githu
 | Feature / Branch               | `main` | `mini` |
 |-------------------------------|--------|--------|
 | Hono Server                   | ✅     | ✅     |
-|  └─ Clean Architecture       | ✅     |        |
+|  └─ Clean Architecture        | ✅     |        |
 | React Router (Framework mode) | ✅     | ✅     |
 | D1 Database                   | ✅     |        |
 | Authentication ([Clerk](https://clerk.com/)) | ✅ |        |

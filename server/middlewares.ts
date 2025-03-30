@@ -1,12 +1,10 @@
 import type { Hono } from 'hono'
-import { compress } from 'hono/compress'
+import { contextStorage } from 'hono/context-storage'
 import { logger } from 'hono/logger'
-import { appendTrailingSlash } from 'hono/trailing-slash'
 
 export const setMiddlewares = (app: Hono<HonoENV>): Hono<HonoENV> => {
-  app.use(appendTrailingSlash())
   app.use(logger())
-  app.use(compress())
+  app.use(contextStorage())
 
   app.use(async (c, next) => {
     const start = Date.now()

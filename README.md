@@ -1,8 +1,8 @@
-![Convertio Image](https://github.com/zett-8/remixed-remix/assets/33055097/096c0cfc-e680-4c48-9d79-a2aa53e77ebb)
+![Convertio Image](https://raw.githubusercontent.com/zett-8/images/refs/heads/master/hrr.png)
 
-# 💿 Remixed React Router
+# 💿 Hono React Router
 
-Remixed React Router is your web app's stellar launchpad improved from the original React Router [template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1).  
+Hono React Router is your web app's stellar launchpad improved from the original React Router [template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1).  
 A production-ready template designed for seamless deployment on Cloudflare Workers.  
 📖 See the [Hono](https://hono.dev/) and the [React Router docs](https://reactrouter.com/) for details on supported features.
 
@@ -19,6 +19,7 @@ A production-ready template designed for seamless deployment on Cloudflare Worke
 ## Setups
 
 - Hono🔥
+- React Router
 - Cloudflare Workers with D1
 - User Authentication with Clerk
 - Tailwind

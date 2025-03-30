@@ -1,10 +1,10 @@
-import { getContext } from 'hono/context-storage'
+import { getAuth } from '@clerk/react-router/ssr.server'
 import { data, useLoaderData } from 'react-router'
 import type { Route } from './+types/dashboard'
 
-export async function loader(_: Route.LoaderArgs) {
-  const userId = getContext<HonoENV>().var.userId
-  return data({ userId })
+export async function loader(args: Route.LoaderArgs) {
+  const auth = await getAuth(args)
+  return data({ userId: auth.userId })
 }
 
 export default function ProtectedRoute() {

@@ -1,5 +1,11 @@
+CREATE TABLE `todos` (
+	`id` text PRIMARY KEY NOT NULL,
+	`title` text NOT NULL,
+	`description` text
+);
+--> statement-breakpoint
 CREATE TABLE `users` (
-	`user_id` text PRIMARY KEY NOT NULL,
+	`id` text PRIMARY KEY NOT NULL,
 	`created_at` text DEFAULT (CURRENT_TIMESTAMP),
 	`email` text NOT NULL,
 	`password` text,

@@ -1,6 +1,5 @@
 import type { D1Database } from '@cloudflare/workers-types/experimental'
-import type { DrizzleD1Database } from 'drizzle-orm/d1'
-import * as schema from '../database/schema/index'
+import type { Services } from '../server/services'
 
 declare global {
   type HonoENV = {
@@ -8,8 +7,7 @@ declare global {
       DB: D1Database
     }
     Variables: {
-      db: DrizzleD1Database<typeof schema>
-      userId: string
+      services: Services
     }
   }
 }

@@ -1,10 +1,12 @@
 import { Hono } from 'hono'
-import { getUsers } from './users'
+import { todosDelete, todosGet, todosPost } from './todo.handler'
 
 const apiHandler = new Hono<HonoENV>()
 
 const _h = apiHandler
-  .get('/users', ...getUsers)
+  .get('/todos', ...todosGet)
+  .post('/todos', ...todosPost)
+  .delete('/todos/:id', ...todosDelete)
   // some other routes
   // .get('/users', ...getUsers)
   // .get('/users', ...getUsers)

@@ -3,7 +3,7 @@
 # 🔥 Hono React Router
 
 **Hono React Router** is a production-ready template designed to launch your web app seamlessly on **Cloudflare Workers**.  
-It builds upon the official [React Router Cloudflare D1 template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1), offering a more powerful and flexible foundation.  
+It builds upon the official [React Router Cloudflare D1 template](https://github.com/remix-run/react-router-templates/tree/main/cloudflare-d1), offering a more powerful and flexible foundation.
 
 📖 Explore the [Hono](https://hono.dev/) and [React Router](https://reactrouter.com/) documentation for full feature references.
 
@@ -17,21 +17,21 @@ It builds upon the official [React Router Cloudflare D1 template](https://github
 
 This repository also includes a lighter version under the [`mini`](https://github.com/zett-8/hono-react-router/tree/mini) branch — choose the version that best fits your needs.
 
-| Feature / Branch               | `main` | `mini` |
-|-------------------------------|--------|--------|
-| Hono Server                   | ✅     | ✅     |
-|  └─ Clean Architecture        | ✅     |        |
-| React Router (Framework mode) | ✅     | ✅     |
-| D1 Database                   | ✅     |        |
-| Authentication ([Clerk](https://clerk.com/)) | ✅ |        |
-| Drizzle ORM                   | ✅     |        |
-| Testing (Vitest)              | ✅     |        |
-| Zod Validation                | ✅     |        |
-| Tailwind CSS                  | ✅     | ✅     |
-| Prettier                      | ✅     | ✅     |
-| ESLint (Flat Config)          | ✅     | ✅     |
-| Vite                          | ✅     | ✅     |
-| TypeScript                    | ✅     | ✅     |
+| Feature / Branch                             | `main` | `mini` |
+| -------------------------------------------- | ------ | ------ |
+| Hono Server                                  | ✅     | ✅     |
+| └─ Clean Architecture                        | ✅     |        |
+| React Router (Framework mode)                | ✅     | ✅     |
+| D1 Database                                  | ✅     |        |
+| Authentication ([Clerk](https://clerk.com/)) | ✅     |        |
+| Drizzle ORM                                  | ✅     |        |
+| Testing (Vitest)                             | ✅     |        |
+| Zod Validation                               | ✅     |        |
+| Tailwind CSS                                 | ✅     | ✅     |
+| Prettier                                     | ✅     | ✅     |
+| ESLint (Flat Config)                         | ✅     | ✅     |
+| Vite                                         | ✅     | ✅     |
+| TypeScript                                   | ✅     | ✅     |
 
 <br />
 
@@ -61,6 +61,7 @@ pnpm db:migrate
 ```bash
 pnpm dev
 ```
+
 Your app will be available at: http://localhost:5173
 
 ### Optional: Run with Wrangler
@@ -99,6 +100,7 @@ npx wrangler versions upload
 ```
 
 Once validated, you can promote a version to production:
+
 ```sh
 npx wrangler versions deploy
 ```
@@ -109,4 +111,3 @@ npx wrangler versions deploy
 
 This template comes pre-configured with [Tailwind CSS](https://tailwindcss.com/) for rapid styling.
 Feel free to replace or extend it with your preferred CSS framework or methodology.
-

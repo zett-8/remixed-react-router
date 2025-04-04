@@ -1,4 +1,4 @@
-import type { todos } from '~/database/schema'
+import type { todos } from '../../database/schema'
 import type { TodoDomain } from '../domains/todo.domain'
 import type { TodoRepository } from '../infrastructure/todo.repository'
 

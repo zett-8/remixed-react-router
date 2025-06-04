@@ -40,7 +40,7 @@ importers:
         version: 0.6.5(hono@4.7.5)(miniflare@4.20250416.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(wrangler@4.12.0(@cloudflare/workers-types@4.20250321.0))
       isbot:
         specifier: ^5.1.17
-        version: 5.1.25
+        version: 5.1.28
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -2811,8 +2811,8 @@ packages:
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
 
-  isbot@5.1.25:
-    resolution: {integrity: sha512-mqU76fmT7cpGG0JX1EzhCZIC+xovpH6TD2SAK18alonk0RG/RgChpGduJTYzRaq9a0COoFA99M9JVtEUOcScIw==}
+  isbot@5.1.28:
+    resolution: {integrity: sha512-qrOp4g3xj8YNse4biorv6O5ZShwsJM0trsoda4y7j/Su7ZtTTfVXFzbKkpgcSoDrHS8FcTuUwcU04YimZlZOxw==}
     engines: {node: '>=18'}
 
   isexe@2.0.0:
@@ -3099,6 +3099,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -6650,7 +6651,7 @@ snapshots:
 
   isarray@2.0.5: {}
 
-  isbot@5.1.25: {}
+  isbot@5.1.28: {}
 
   isexe@2.0.0: {}
 
